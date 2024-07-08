@@ -1,4 +1,4 @@
-# terrafrom-aws-ec2
+# terraform-aws-ec2
 ---
 # AWS EC2 Instance Setup with Terraform
 
