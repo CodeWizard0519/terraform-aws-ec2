@@ -1,0 +1,38 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"eks:CreateCluster",
+				"eks:DescribeCluster",
+				"eks:ListClusters",
+				"eks:DeleteCluster",
+				"eks:UpdateClusterConfig",
+				"eks:UpdateClusterVersion",
+				"eks:CreateNodegroup",
+				"eks:DescribeNodegroup",
+				"eks:ListNodegroups",
+				"eks:DeleteNodegroup",
+				"eks:UpdateNodegroupConfig",
+				"eks:UpdateNodegroupVersion",
+				"iam:CreateRole",
+				"iam:AttachRolePolicy",
+				"iam:PutRolePolicy",
+				"iam:PassRole",
+				"ec2:DescribeSubnets",
+				"ec2:DescribeVpcs",
+				"ec2:DescribeRouteTables",
+				"ec2:DescribeSecurityGroups",
+				"ec2:CreateSecurityGroup",
+				"ec2:AuthorizeSecurityGroupIngress",
+				"ec2:AuthorizeSecurityGroupEgress",
+				"eks:CreateAddon",
+				"eks:DeleteAddon",
+				"eks:DescribeAddon",
+				"eks:UpdateAddon"
+			],
+			"Resource": "*"
+		}
+	]
+}
