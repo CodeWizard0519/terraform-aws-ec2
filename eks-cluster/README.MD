@@ -1,3 +1,51 @@
+ Steps to install AWS CLI, kubectl, and Terraform on macOS platforms:
+
+### Installing on macOS
+
+#### 1. **AWS CLI:**
+
+   - Open Terminal.
+   - Install AWS CLI using Homebrew:
+
+     ```sh
+     brew install awscli
+     ```
+
+   - Verify installation:
+
+     ```sh
+     aws --version
+     ```
+
+#### 2. **kubectl:**
+
+   - Install kubectl using Homebrew:
+
+     ```sh
+     brew install kubectl
+     ```
+
+   - Verify installation:
+
+     ```sh
+     kubectl version --client
+     ```
+
+#### 3. **Terraform:**
+
+   - Install Terraform using Homebrew:
+
+     ```sh
+     brew install terraform
+     ```
+
+   - Verify installation:
+
+     ```sh
+     terraform --version
+     ```
+
+----
 ### Initialize Terraform
 
 Initialize a Terraform working directory containing Terraform configuration files:
