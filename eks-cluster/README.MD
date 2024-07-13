@@ -1,3 +1,51 @@
+### Initialize Terraform
+
+Initialize a Terraform working directory containing Terraform configuration files:
+
+```sh
+terraform init
+```
+
+This command initializes various local settings and data that Terraform will use to execute commands and manage your infrastructure.
+
+### Create an Execution Plan (Optional but recommended)
+
+Generate and show an execution plan without making any changes to infrastructure. This step is useful to preview what Terraform will do before actually applying the changes:
+
+```sh
+terraform plan
+```
+
+### Apply Changes
+
+Apply the changes required to reach the desired state of the configuration, as defined by the `.tf` files in the directory:
+
+```sh
+terraform apply
+```
+
+This command will prompt for confirmation (`yes` to proceed). Terraform will then apply the changes, provisioning or modifying resources as necessary.
+
+### Destroy Infrastructure
+
+Destroy Terraform-managed infrastructure. This command is used to delete all resources defined in your Terraform configuration:
+
+```sh
+terraform destroy
+```
+
+This command will prompt for confirmation (`yes` to proceed). Terraform will then proceed to destroy all resources defined in your configuration.
+
+### Notes:
+
+- **State Management**: Terraform maintains the state of your infrastructure in a `terraform.tfstate` file. This file is crucial for managing and tracking changes to your infrastructure. Ensure it's managed properly to avoid accidental deletion or corruption.
+
+- **Backend Configuration**: Depending on your setup, Terraform might use a backend to store state files remotely. Make sure your backend configuration (`backend.tf`) is correctly set up if you're using remote state management.
+
+These commands provide a foundational workflow for managing infrastructure with Terraform. Always review the Terraform output carefully during `plan` and `apply` stages to verify expected changes and avoid unintended modifications.
+
+----
+
 To get the `kubeconfig` for the EKS cluster that you've created using Terraform, you can follow these steps. The `kubeconfig` file allows you to connect to your EKS cluster from your local machine or any other environment.
 
 ### Using AWS CLI
